@@ -7,6 +7,6 @@ function sumar()
     num2 = parseInt(document.querySelector("#numeroDos").value)
     total= num1+num2;
 
-    alert("La suma de los numeros ngresados es: "+total);
+    alert("La suma de los numeros ingresados es: "+total);
 }
 
