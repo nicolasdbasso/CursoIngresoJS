@@ -12,6 +12,9 @@ function mostrar()
 
 	while (respuesta == "si"){
 		var num = parseInt(prompt("Ingrese un numero."));
+		while (isNaN(num)){
+			num = parseInt(prompt("Ingrese un numero."));
+		}
 		acumulador += num;
 		respuesta = prompt("quiere volver a ingresar numero?");
 	}
