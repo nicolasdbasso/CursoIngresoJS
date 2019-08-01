@@ -13,14 +13,14 @@ function mostrar()
     for (i = 0 ; i < cantNota ; i++){
         do{
             nota = prompt("Ingrese nota (entre 0 y 10): ");
-        }while(nota < 0 || nota > 10);
+        }while(nota < 0 || nota > 10 || isNaN(nota));
 
         do{
             sexo = prompt("Ingrese sexo ('m' o 'f'): ");
         }while (sexo != 'm' && sexo != 'f');
 
 
-        
+        /*
         if (flag == 0){
 
             notaBaja = nota;
@@ -32,6 +32,13 @@ function mostrar()
                 sexoNotaBaja = sexo;
             };
         };
+*/
+
+if (nota > notaBaja || flag == 0){
+    notaBaja = nota;
+    sexoNotaBaja = sexo;
+    flag = 1;
+}
 
         if ( sexo == 'm' && nota >= 6){
             cantVaronesMasSeis++;
